@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bristol Car Park Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>BRISTOL CAR PARK EXPLORER</h1>
+</header>
+
+<div class="top-bar">
+    <button id="refreshBtn">↻ REFRESH DATA</button>
+</div>
+
+<div class="container">
+
+    <aside class="filters">
+        <h2>FILTERS</h2>
+
+        <label>FILTER BY AREA</label>
+        <select id="areaFilter">
+            <option>All Areas</option>
+        </select>
+
+        <label>FILTER BY AVAILABILITY</label>
+        <select id="availabilityFilter">
+            <option>All Levels</option>
+            <option>Available Only</option>
+        </select>
+    </aside>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>CAR PARK NAME</th>
+                    <th>TOTAL SPACES</th>
+                    <th>AVAILABLE SPACES</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </main>
+
+</div>
+
+<footer>
+    DATA SOURCE: BRISTOL OPEN DATA
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
